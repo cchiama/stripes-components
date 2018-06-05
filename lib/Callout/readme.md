@@ -5,7 +5,7 @@ Keep your user informed about the actions they take! Callout creates a small ale
 Simply add the `<Callout>` component to your module with a ref. This works best at the highest level of your module.
 ```
 // ... in your JSX...
-<Callout ref={(ref)={this.callout = ref;}}/>
+<Callout ref={(ref)=>{this.callout = ref;}}/>
 ```
 Use the ref to the `<Callout>` to call the `sendCallout` method, supplying a configuration object for the callout:
 ```
